@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="/style.css">
         <title>calculator</title>
-        <script>
+        <!-- <script>
            let valuenew=""
           function handleChange(event) {
            valuenew+=event.target.value
@@ -15,11 +15,11 @@
             document.getElementById('id1').value=eval(result)
             event.preventDefault();
           }
-          </script>
+          </script> -->
        
       </head>
-    <h1 class="title" >calculator</h1>
-    <form name="form1">
+    <!-- <h1 class="title" >calculator</h1>
+    <form name="form1" action=/result method=post>
       <input  id='id1' >
       <p>value1 :</p>
       <input onchange="handleChange(event)">
@@ -27,9 +27,20 @@
       <input onchange="handleChange(event)">
       <p>value2 :</p>
       <input onchange="handleChange(event)">
-     
       <br/>
       <button onclick="result(event)">=</button>
+  
+    </form> -->
+    <h1 class="title" >calculator</h1>
+    <form name="form1" action=/result method=post>
+      <p>value1 :</p>
+      <input type="text" name="firstvalue" >
+      <p>operator :</p>
+      <input  type="text" name="operator" >
+      <p>value2 :</p>
+      <input type="text" name="secondvalue">
+      <br/>
+      <button  type="submit">=</button>
   
     </form>
     

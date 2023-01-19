@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/style.css">
+        <title>calculator</title>
+    </head>
+    <body>
+        <h1> result</h1>
+        <%= eval(req.body.firstvalue+req.body.operator+req.body.secondvalue) %>
+    </body>
+</html>
